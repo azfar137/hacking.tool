@@ -1,1 +1,1 @@
-# hacking.tool
+# prank.tool
