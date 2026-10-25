@@ -231,6 +231,15 @@
 
     <!-- Script Logic -->
     <script>
+        function startPrank() {
+    // Fullscreen Trigger
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {});
+    }
+    // Overlay Hide
+    document.getElementById('start-overlay').style.display = 'none';
+        }
+        
         // --- Matrix Background Rain ---
         const canvas = document.getElementById('matrix-bg');
         const ctx = canvas.getContext('2d');
